@@ -326,7 +326,7 @@ type MemberTag struct {
 
 type MemberTagRequest struct {
 	Name   string `json:"name"`
-	Status int    `json:"status"`
+	Status string `json:"status"`
 }
 
 type AddMemberTagsRequest struct {
