@@ -32,6 +32,7 @@ type MemberRequest struct {
 	Language     string                 `json:"language"`
 	VIP          bool                   `json:"vip"`
 	Location     *MemberLocation        `json:"location,omitempty"`
+	Tags         []string               `json:"tags,omitempty"`
 }
 
 type Member struct {
@@ -49,6 +50,7 @@ type Member struct {
 	LastChanged     string          `json:"last_changed"`
 	EmailClient     string          `json:"email_client"`
 	LastNote        MemberNoteShort `json:"last_note"`
+	Tags            []string        `json:"tags,omitempty"`
 
 	api *API
 }
