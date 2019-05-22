@@ -32,7 +32,7 @@ type MemberRequest struct {
 	Language     string                 `json:"language"`
 	VIP          bool                   `json:"vip"`
 	Location     *MemberLocation        `json:"location,omitempty"`
-	Tags         []MemberTag            `json:"tags,omitempty"`
+	Tags         []string               `json:"tags,omitempty"`
 }
 
 type Member struct {
