@@ -90,7 +90,7 @@ type MemberNoteShort struct {
 
 type MemberTag struct {
 	ID   int    `json:"id"`
-	name string `json:"name"`
+	Name string `json:"name"`
 }
 
 func (list ListResponse) GetMembers(params *InterestCategoriesQueryParams) (*ListOfMembers, error) {
